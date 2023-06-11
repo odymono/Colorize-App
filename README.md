@@ -40,10 +40,10 @@ To run Colorize App locally, follow these steps:
 4. Start the application:
 
    ```bash
-   npm start
+   npm run serve
    ```
 
-5. Open your web browser and visit `http://localhost:3000` to access the Colorize App.
+5. Open your web browser and visit `http://localhost:4200` to access the Colorize App.
 
 ## Technologies Used
 
