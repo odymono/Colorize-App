@@ -1,0 +1,168 @@
+dropzone ::ng-deep .dropzone.dz-wrapper .dz-message {
+    --tw-border-opacity: 1;
+    min-height: 240px;
+    border-color: rgb(55 65 81);
+    background-color: rgb(31 41 55);
+    border: 2px solid;
+    border-width: 2px;
+    border-color: rgb(55 65 81);
+    border-radius: 0.5rem;
+}
+
+dropzone ::ng-deep .dropzone.dz-wrapper .dz-message:hover {
+    background-color: rgb(55 65 81);
+}
+
+dropzone ::ng-deep .dropzone {
+    max-width: 64rem;
+    margin: auto;
+    margin-top: 50px;
+}
+
+dropzone ::ng-deep .dropzone {
+    transition: all 0.5s ease-out;
+}
+
+dropzone ::ng-deep .dropzone .dz-preview {
+    min-height: 270px;
+}
+
+.lds-roller {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-roller div {
+    animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    transform-origin: 40px 40px;
+  }
+  .lds-roller div:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #fff;
+    margin: -4px 0 0 -4px;
+  }
+  .lds-roller div:nth-child(1) {
+    animation-delay: -0.036s;
+  }
+  .lds-roller div:nth-child(1):after {
+    top: 63px;
+    left: 63px;
+  }
+  .lds-roller div:nth-child(2) {
+    animation-delay: -0.072s;
+  }
+  .lds-roller div:nth-child(2):after {
+    top: 68px;
+    left: 56px;
+  }
+  .lds-roller div:nth-child(3) {
+    animation-delay: -0.108s;
+  }
+  .lds-roller div:nth-child(3):after {
+    top: 71px;
+    left: 48px;
+  }
+  .lds-roller div:nth-child(4) {
+    animation-delay: -0.144s;
+  }
+  .lds-roller div:nth-child(4):after {
+    top: 72px;
+    left: 40px;
+  }
+  .lds-roller div:nth-child(5) {
+    animation-delay: -0.18s;
+  }
+  .lds-roller div:nth-child(5):after {
+    top: 71px;
+    left: 32px;
+  }
+  .lds-roller div:nth-child(6) {
+    animation-delay: -0.216s;
+  }
+  .lds-roller div:nth-child(6):after {
+    top: 68px;
+    left: 24px;
+  }
+  .lds-roller div:nth-child(7) {
+    animation-delay: -0.252s;
+  }
+  .lds-roller div:nth-child(7):after {
+    top: 63px;
+    left: 17px;
+  }
+  .lds-roller div:nth-child(8) {
+    animation-delay: -0.288s;
+  }
+  .lds-roller div:nth-child(8):after {
+    top: 56px;
+    left: 12px;
+  }
+  @keyframes lds-roller {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .loading-spinner {
+    /* Position the loading spinner at the center of the page */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  
+    /* Customize the appearance of the loading spinner */
+    /* Add your styles here */
+
+    z-index: 9999;
+  }
+  
+  /* Add a transparent background to cover the whole page */
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Customize the transparency as needed */
+
+    z-index: 9998;
+  }
+
+
+/* CSS style for the warning alert with animation */
+.warning-alert {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    padding: 1rem;
+    border-radius: 4px;
+    z-index: 9999;
+  
+    /* CSS transition for opacity */
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  /* CSS class for showing the warning alert */
+  .alert-show {
+    opacity: 1; /* updated opacity */
+    transform: translateY(0); /* animate the vertical position using translateY */
+  }
+  
+  /* CSS class for hiding the warning alert */
+  .alert-hide {
+    opacity: 0; /* updated opacity */
+    transform: translateY(-10rem); /* animate the vertical position using translateY */
+  }
+  
+a {
+  cursor: pointer;
+}

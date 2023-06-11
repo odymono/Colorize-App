@@ -1,0 +1,34 @@
+<style>
+  .slider-example-focus {
+    /*
+        The style below isn't necessary.
+        It has been added for the sake of smoothness.
+      */
+    outline: none;
+    transition: box-shadow 200ms ease-in-out;
+  }
+
+  .slider-example-focus:hover {
+    outline: none;
+  }
+</style>
+<div class="px-4 sm:px-6 md:px-8">
+  <div class="relative max-w-5xl mx-auto pt-10 sm:pt-12 lg:pt-16">
+    <h1
+      class="text-slate-900 font-extrabold text-4xl sm:text-5xl lg:text-6xl tracking-tight text-center dark:text-white">
+      Верни цвета своей памяти.</h1>
+    <div class="mt-10 flex items-center justify-center">
+      <a routerLink="/colorize"
+        class="rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 px-7 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+        Colorize</a>
+    </div>
+  </div>
+  <div class="relative max-w-5xl mx-auto pt-5 sm:pt-6 lg:pt-8">
+    <div class="drop-shadow-xl">
+      <img-comparison-slider class="slider-example-focus rendered rounded-3xl" tabindex="0">
+        <img slot="first" width="100%" src="assets/images/Slider_left.gif">
+        <img slot="second" width="100%" src="assets/images/Slider_right.gif">
+      </img-comparison-slider>
+    </div>
+  </div>
+</div>

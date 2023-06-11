@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    box-sizing: border-box;
+}
+html {
+    height: 100%;
+}
+
+body {
+    background-color: rgb(15 23 42);
+    background-image: url('./assets/images/bg4.jpg');
+}
+
+
