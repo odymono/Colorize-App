@@ -47,7 +47,7 @@ To run Colorize App locally, follow these steps:
 
 ## Technologies Used
 
-- React: A JavaScript library for building user interfaces.
+- Angular
 - TensorFlow.js: A machine learning library for JavaScript that enables training and inference of deep learning models in the browser.
 - Express: A minimal and flexible Node.js web application framework for building web applications.
 - HTML5: The latest version of the Hypertext Markup Language that defines the structure and presentation of web content.
